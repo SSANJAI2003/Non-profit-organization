@@ -1,0 +1,525 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NGO Registration - Non-profit</title>
+
+    <!-- CSS FILES -->
+    <link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/vendor/css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER SECTION - START
+    ========================================= -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Chennai, 123, India
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@charity.org">
+                            info@charity.org
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
+                    <ul class="social-icon">
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-twitter"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-facebook"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-instagram"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-youtube"></a>
+                        </li>
+
+                        <li class="social-icon-item">
+                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION - END -->
+
+    <!-- ========================================
+         NAVIGATION SECTION - START
+    ========================================= -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" class="logo img-fluid" alt="Non-profit Logo">
+                <span>
+                    Non-Profit
+                    <small>Empowering Change Together</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#individual">Individual</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ngo.html">NGO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn dropdown-toggle" href="#"
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Register</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                            <li><a class="dropdown-item" href="donor-registration.html">Donor</a>
+                            </li>
+                            <li><a class="dropdown-item" href="ngo-registration.html">Receiver</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION SECTION - END -->
+
+    <main>
+
+        <!-- ========================================
+             NGO REGISTRATION FORM SECTION - START
+        ========================================= -->
+        <section class="section-padding">
+            <div class="container registration-container">
+                <div class="row">
+
+                    <!-- Form Column -->
+                    <div class="col-lg-7 col-12 mb-4 mb-lg-0">
+                        <div class="registration-form-card">
+                            <h2 class="mb-2">NGO Registration</h2>
+                            <h5 class="mb-3 title">Partner with us to amplify your impact!</h5>
+                            <p class="mb-4 subtitle">Register your organization to connect with donors, volunteers, and
+                                resources that can help you achieve your mission.</p>
+
+                            <form class="custom-form donate-form" action="#" method="post" role="form">
+                                <h4 class="mb-3">Organization Information</h4>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="org-name" class="form-label">Organization Name *</label>
+                                        <input type="text" name="org-name" id="org-name" class="form-control"
+                                            placeholder="Organization Name" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="org-email" class="form-label">Email *</label>
+                                        <input type="email" name="org-email" id="org-email" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="Email" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="org-phone" class="form-label">Phone</label>
+                                        <input type="tel" name="org-phone" id="org-phone" class="form-control"
+                                            placeholder="Phone">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="org-type" class="form-label">Organization Type *</label>
+                                        <select class="form-select form-control" name="org-type" id="org-type" required>
+                                            <option value="" disabled selected>Select Organization Type</option>
+                                            <option value="NGO">NGO (Non-Governmental Organization)</option>
+                                            <option value="Charity">Charity Organization</option>
+                                            <option value="Non-Profit">Non-Profit Organization</option>
+                                            <option value="Foundation">Foundation</option>
+                                            <option value="Community-Based">Community-Based Organization</option>
+                                            <option value="Social-Enterprise">Social Enterprise</option>
+                                            <option value="Trust">Trust</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="need-type" class="form-label">Type of Need *</label>
+                                        <select class="form-select form-control" name="need-type" id="need-type"
+                                            required>
+                                            <option value="" disabled selected>Select Type of Need</option>
+                                            <option value="Financial-Support">Financial Support</option>
+                                            <option value="Material-Support">Material Support (Food, Clothing, etc.)
+                                            </option>
+                                            <option value="Volunteers">Volunteers</option>
+                                            <option value="Medical-Supplies">Medical Supplies</option>
+                                            <option value="Educational-Resources">Educational Resources</option>
+                                            <option value="Infrastructure">Infrastructure Development</option>
+                                            <option value="Technology">Technology & Equipment</option>
+                                            <option value="Professional-Services">Professional Services</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="amount-needed" class="form-label">Amount Needed</label>
+                                        <input type="text" name="amount-needed" id="amount-needed" class="form-control"
+                                            placeholder="0">
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 mt-2">
+                                        <label for="org-proof" class="form-label">NGO Documentation Proof *</label>
+                                        <input type="file" name="org-proof" id="org-proof" class="form-control"
+                                            required>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 mt-2">
+                                        <label for="city" class="form-label">City *</label>
+                                        <select class="form-select form-control" name="city" id="city" required>
+                                            <option value="" disabled selected>Select City</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Bangalore">Bangalore</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Kolkata">Kolkata</option>
+                                            <option value="Pune">Pune</option>
+                                            <option value="Ahmedabad">Ahmedabad</option>
+                                            <option value="Jaipur">Jaipur</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 mt-2">
+                                        <label for="state" class="form-label">State *</label>
+                                        <select class="form-select form-control" name="state" id="state" required>
+                                            <option value="" disabled selected>Select State</option>
+                                            <option value="Tamil-Nadu">Tamil Nadu</option>
+                                            <option value="Maharashtra">Maharashtra</option>
+                                            <option value="Delhi">Delhi</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Telangana">Telangana</option>
+                                            <option value="West-Bengal">West Bengal</option>
+                                            <option value="Gujarat">Gujarat</option>
+                                            <option value="Rajasthan">Rajasthan</option>
+                                            <option value="Kerala">Kerala</option>
+                                            <option value="Punjab">Punjab</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 mt-2">
+                                        <label for="country" class="form-label">Country *</label>
+                                        <select class="form-select form-control" name="country" id="country" required>
+                                            <option value="" disabled selected>Select Country</option>
+                                            <option value="India">India</option>
+                                            <option value="USA">United States</option>
+                                            <option value="UK">United Kingdom</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Australia">Australia</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="France">France</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12 mt-4">
+                                        <label class="form-label">Categories of Need *</label>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Education"
+                                                        id="cat-education">
+                                                    <label class="form-check-label"
+                                                        for="cat-education">Education</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="Food & Nutrition" id="cat-food">
+                                                    <label class="form-check-label" for="cat-food">Food &
+                                                        Nutrition</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Environment"
+                                                        id="cat-env">
+                                                    <label class="form-check-label" for="cat-env">Environment</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Children"
+                                                        id="cat-children">
+                                                    <label class="form-check-label" for="cat-children">Children</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="Skills Training" id="cat-skills">
+                                                    <label class="form-check-label" for="cat-skills">Skills
+                                                        Training</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Healthcare"
+                                                        id="cat-health">
+                                                    <label class="form-check-label" for="cat-health">Healthcare</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Shelter"
+                                                        id="cat-shelter">
+                                                    <label class="form-check-label" for="cat-shelter">Shelter</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Elderly Care"
+                                                        id="cat-elderly">
+                                                    <label class="form-check-label" for="cat-elderly">Elderly
+                                                        Care</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        value="Disaster Relief" id="cat-disaster">
+                                                    <label class="form-check-label" for="cat-disaster">Disaster
+                                                        Relief</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="Technology"
+                                                        id="cat-tech">
+                                                    <label class="form-check-label" for="cat-tech">Technology</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <small class="text-danger">Please select at least one category</small>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12 mt-2">
+                                        <label for="description" class="form-label">Description of Needs *</label>
+                                        <textarea name="description" rows="4" class="form-control" id="description"
+                                            placeholder="Describe your organization's mission and specific needs in detail..."
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12 mt-4">
+                                    <button type="submit" class="form-control">Submit Registration</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Guidelines Sidebar -->
+                    <div class="col-lg-5 col-12">
+                        <div class="registration-guidelines">
+                            <h3>Why Partner With Us?</h3>
+
+                            <div class="guidelines-quote">
+                                "Alone we can do so little; together we can do so much."
+                                <span class="guidelines-quote-author">— Helen Keller</span>
+                            </div>
+
+                            <div class="guidelines-quote">
+                                "The purpose of life is not to be happy. It is to be useful, to be honorable, to be
+                                compassionate."
+                                <span class="guidelines-quote-author">— Ralph Waldo Emerson</span>
+                            </div>
+
+                            <h4>Partnership Impact</h4>
+                            <div class="guidelines-stat">
+                                <h5>250+</h5>
+                                <p>NGOs successfully partnered and funded</p>
+                            </div>
+
+                            <div class="guidelines-stat">
+                                <h5>₹2 Crores+</h5>
+                                <p>Distributed to partner organizations</p>
+                            </div>
+
+                            <div class="guidelines-stat">
+                                <h5>95%</h5>
+                                <p>Partner satisfaction rate</p>
+                            </div>
+
+                            <h4>Benefits of Partnership</h4>
+                            <ul class="guidelines-list">
+                                <li>Access to verified donor network</li>
+                                <li>Free fundraising campaign support</li>
+                                <li>Marketing and visibility on our platform</li>
+                                <li>Volunteer recruitment assistance</li>
+                                <li>Capacity building workshops and training</li>
+                                <li>Networking opportunities with other NGOs</li>
+                            </ul>
+
+                            <h4>What We Provide</h4>
+                            <ul class="guidelines-list">
+                                <li>Dedicated account manager for your organization</li>
+                                <li>Regular impact assessment and reporting</li>
+                                <li>Technology tools for project management</li>
+                                <li>Legal and compliance guidance</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- NGO REGISTRATION FORM SECTION - END -->
+
+    </main>
+
+    <!-- ========================================
+         FOOTER SECTION - START
+    ========================================= -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-12 mb-4">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.png" class="logo img-fluid" alt="Non-profit Logo">
+                        <span>
+                            Non-Profit
+                            <small style="color: var(--p-color); font-size: 11px; font-weight: 800;">Empowering Change
+                                Together</small>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5>
+
+                    <ul class="footer-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#individual">Individual</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Action Links</h5>
+                    <ul class="footer-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="ngo.html">NGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="donor-registration.html">Donor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receiver-registration.html">Receiver</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3">Contact Infomation</h5>
+
+                    <p class="d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: 305-240-9671" class="site-footer-link">
+                            305-240-9671
+                        </a>
+                    </p>
+
+                    <p class="d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@charity.org" class="site-footer-link">
+                            info@charity.org
+                        </a>
+                    </p>
+
+                    <p class="d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Chennai, 123, India
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-7 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2025 <a href="#">Non-Profit</a>
+                            Organization All
+                            Rights Reserved.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION - END -->
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="assets/vendor/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/js/jquery.sticky.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- JAVASCRIPT FILES - END -->
+
+</body>
+
+</html>
