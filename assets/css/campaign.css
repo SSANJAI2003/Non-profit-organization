@@ -294,6 +294,7 @@
 @media (min-width: 1281px) {
     /* No specific overrides from original file, but placeholder for consistency */
 }
+
 /* ========================================
    CONTENT SECTIONS
 ======================================== */
@@ -348,7 +349,7 @@
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
-    min-height: 211px;
+    min-height: 253px;
 }
 
 .feature-box h6 {
